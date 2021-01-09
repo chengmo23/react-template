@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { MEDIA_BREAK } from '../../layout';
+import styled, { keyframes } from 'styled-components'
+import { MEDIA_BREAK } from '../../layout'
 
 export const ToastsContainer = styled.div`
   position: fixed;
@@ -21,4 +21,12 @@ export const ToastsContainer = styled.div`
     right: 0;
     max-width: 100%;
   }
-`;
+`
+
+const toastFade = keyframes`
+
+`
+
+const Toast = styled.div``
+
+export const WarnToast = styled(Toast)``
