@@ -7,6 +7,13 @@ Especially for courseworks in college.
 
 - [styled-components](https://github.com/styled-components/styled-components)
 - [tippyjs-react](https://github.com/atomiks/tippyjs-react)
+- [material ui](https://material-ui.com/)
+
+## Main packages used
+
+- react-router-dom( component routing )
+- react-hot-loader( enables hot reload which facilitate development )
+- react-loadable( dynamic import which enalbes code-spliting in route level )
 
 ## Before development
 

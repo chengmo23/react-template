@@ -1,20 +1,24 @@
+import Routes from './hot-routes'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Tooltip from './components/tooltip'
+import { BrowserRouter } from 'react-router-dom'
+import Loadable from 'react-loadable'
+import './index.css'
 
 const App = () => {
   return (
     <div className="App">
-      <Tooltip content="Hello">
-        <button>My</button>
-      </Tooltip>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
     </div>
   )
 }
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-)
+Loadable.preloadReady()
+  .then(() => {
+    ReactDOM.render(<App />, document.getElementById('root'))
+  })
+  .catch((err) => {
+    console.log(err)
+  })

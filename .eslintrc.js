@@ -16,6 +16,7 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'comma-dangle': ['error', 'always-multiline'],
+    'react/display-name': 0,
   },
   settings: {
     react: {

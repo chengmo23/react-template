@@ -1,29 +1,38 @@
-import Tippy from '@tippyjs/react'
 import React, { ReactElement } from 'react'
+import MaterialToolTip from '@material-ui/core/Tooltip'
+import Zoom from '@material-ui/core/Zoom'
 
 type Props = {
-  content: string | ReactElement
+  title: string | ReactElement
+  placement?:
+    | 'top'
+    | 'top-start'
+    | 'top-end'
+    | 'right'
+    | 'right-start'
+    | 'right-end'
+    | 'bottom'
+    | 'bottom-start'
+    | 'bottom-end'
+    | 'left'
+    | 'left-start'
+    | 'left-end'
   style?: Record<string, unknown>
   children: ReactElement
 }
 
 const Tooltip = (props: Props): ReactElement => {
-  const { content, style = {}, children, ...rest } = props
+  const { title, placement = 'top', style = {}, children, ...rest } = props
   return (
-    <Tippy
-      placement="top"
-      arrow={true}
-      content={<span style={{ fontSize: '14px', fontWeight: 'bold', ...style }}>{content}</span>}
-      {...rest}
-    >
+    <MaterialToolTip arrow title={title} placement={placement} style={style} TransitionComponent={Zoom} {...rest}>
       {children}
-    </Tippy>
+    </MaterialToolTip>
   )
 }
 
 export default Tooltip
 
-// usage:
+// example:
 // <Tooltip content='text shown when hover'>
-//  <the element which triggers this tooltip />
+//   <button />
 // </Tooltip>
