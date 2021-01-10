@@ -13,6 +13,7 @@ Especially for courseworks in college.
 
 - react-router-dom( component routing )
 - react-hot-loader( enables hot reload which facilitate development )
+- react-app-rewired/react-app-rewire-hot-reloader( tweak webpack config without ejecting )
 - react-loadable( dynamic import which enalbes code-spliting in route level )
 
 ## Before development

@@ -5,7 +5,7 @@ type Props = {
 }
 
 const SampleView = (props: Props): ReactElement => {
-  return <div className="SampleView">test12</div>
+  return <div className="SampleView">test</div>
 }
 
 export default SampleView
