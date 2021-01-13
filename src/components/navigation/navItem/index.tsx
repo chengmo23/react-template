@@ -1,13 +1,14 @@
 import { SvgIconTypeMap } from '@material-ui/core'
 import { OverridableComponent } from '@material-ui/core/OverridableComponent'
 import React, { ReactElement } from 'react'
+import { Obj } from '../../../../shared/types/General'
 import Tooltip from '../../tooltip'
 import { NavItemContainer, NavItemLink, navIconStyle } from './style'
 
 type Props = {
   name: string
   isActive: boolean
-  icon: OverridableComponent<SvgIconTypeMap<Record<string, unknown>, 'svg'>>
+  icon: OverridableComponent<SvgIconTypeMap<Obj, 'svg'>>
 }
 
 const NavItem = (props: Props): ReactElement => {

@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react'
 import MaterialToolTip from '@material-ui/core/Tooltip'
 import Zoom from '@material-ui/core/Zoom'
+import { Obj } from '../../../shared/types/General'
 
 type Props = {
   title: string | ReactElement
@@ -17,7 +18,7 @@ type Props = {
     | 'left'
     | 'left-start'
     | 'left-end'
-  style?: Record<string, unknown>
+  style?: Obj
   children: ReactElement
 }
 
