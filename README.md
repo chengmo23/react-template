@@ -1,7 +1,6 @@
 # React-template
 
-This is a react-template for my own use.
-Especially for courseworks in college.
+This is a template for my react projects.
 
 ## UI libraries used
 
