@@ -1,3 +1,4 @@
+// web pack config
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const rewireReactHotLoader = require('react-app-rewire-hot-loader')
 

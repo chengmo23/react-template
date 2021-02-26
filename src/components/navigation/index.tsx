@@ -1,12 +1,13 @@
 import React, { ReactElement, useState } from 'react'
 import { Route } from 'react-router-dom'
+import { Obj } from '../../../shared/types/General'
 import HomeTab from './HomeTab'
 import { NavWrapper, NavigationGrid } from './style'
 import UserTab from './UserTab'
 
 type Props = {
   history?: History
-  user?: Record<string, unknown>
+  user?: Obj
 }
 
 const Navigation = (props: Props): ReactElement => {

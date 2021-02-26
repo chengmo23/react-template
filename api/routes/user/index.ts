@@ -8,7 +8,7 @@ export class UserRoutes extends Routes {
     super(router, 'UserRoutes')
   }
 
-  configureRoutes() {
+  configureRoutes(): void {
     this.router
       .route(`/users`)
       .get((req: Request, res: Response) => {
